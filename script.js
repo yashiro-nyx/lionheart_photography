@@ -189,7 +189,7 @@ const products = [
         label: 'COMPACT EXCELLENCE',
         name: 'Canon IXUS',
         description: 'Ultra-slim design meets powerful performance. The Canon IXUS delivers stunning images in a pocket-sized package perfect for everyday photography.',
-        image: './img/Canon IXUS.png',
+        image: './img/Canon Ixus.png',
         accentColor: '#777575',
         gradientClass: 'gradient-1',
         details: {
@@ -289,7 +289,7 @@ const products = [
         label: 'CLASSIC HERITAGE',
         name: 'Kodak PixPro',
         description: 'Timeless photography reimagined. Kodak brings its legendary heritage to digital cameras with intuitive controls and vibrant color reproduction.',
-        image: './img/kodak.png',
+        image: './img/Kodak.png',
         accentColor: '#F59E0B',
         gradientClass: 'gradient-5',
         details: {
