@@ -947,7 +947,6 @@ svg path {
     }
 }
 
-/* Responsive Design - Tablets and smaller devices */
 @media (max-width: 1024px) {
   .navbar {
     padding: 1rem 2rem;
@@ -1030,7 +1029,6 @@ svg path {
   }
 }
 
-/* Mobile Landscape and smaller tablets */
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem 1.5rem;
