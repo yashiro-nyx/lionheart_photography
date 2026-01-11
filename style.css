@@ -1052,159 +1052,6 @@ svg path {
   }
 
   .heroSection p {
-    font-size: 2vw;
-    padding: 0 5vw;
-  }
-
-  .aboutSection {
-    flex-direction: column;
-    padding: 8vw;
-    gap: 3rem;
-  }
-
-  .aboutSection h1 {
-    font-size: 15vw;
-    text-align: center;
-  }
-
-  .about-img {
-    width: 60vw;
-    height: 70vw;
-    margin: 0 auto;
-  }
-
-  .intro {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .intro-col {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .intro-col p {
-    font-size: 0.8rem;
-    text-align: left !important;
-  }
-
-  .intro-col:nth-child(2) p {
-    text-align: left;
-  }
-
-  .copy {
-    width: 80%;
-  }
-
-  .copy h1 {
-    font-size: 7vw;
-  }
-
-  .footerSection {
-    font-size: 10vw;
-    padding: 2rem;
-    text-align: center;
-  }
-
-  .parallax h1 {
-    font-size: 12vw;
-  }
-
-  .main-content {
-    padding: 1.5rem;
-  }
-
-  .content-wrapper {
-    height: auto;
-    min-height: 60vh;
-  }
-
-  .flex-container {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .text-section,
-  .image-section,
-  .text-section.detail-view,
-  .image-section.detail-view {
-    width: 100%;
-    padding: 0;
-  }
-
-  .text-section.detail-view {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .product-name {
-    font-size: 3rem;
-  }
-
-  .description {
-    font-size: 1rem;
-  }
-
-  .image-section {
-    height: 40vh;
-  }
-
-  .navigation,
-  .button {
-    padding: 0 1.5rem;
-    bottom: 1.5rem;
-  }
-
-  .slider-container .slide .item {
-    width: 150px;
-    height: 225px;
-  }
-
-  .slide .item:nth-child(3) {
-    left: calc(50% - 75px);
-  }
-
-  .slide .item:nth-child(4) {
-    left: calc(50% + 80px);
-  }
-
-  .slide .item:nth-child(5) {
-    left: calc(50% + 240px);
-  }
-
-  .item .content {
-    left: 50px;
-    width: 200px;
-  }
-
-  .content .name {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    padding: 1rem 1.5rem;
-  }
-
-  .nav-logo {
-    font-size: 1.1rem;
-  }
-
-  .nav-links {
-    gap: 1.5rem;
-  }
-
-  .nav-links li a {
-    font-size: 0.75rem;
-  }
-
-  .heroSection h1 {
-    font-size: 18vw;
-    padding-bottom: 35vh;
-  }
-
-  .heroSection p {
     font-size: 2.5vw;
     padding: 0 5vw;
   }
@@ -1318,7 +1165,7 @@ svg path {
   }
 
   .slider-container {
-    height: 80vh;
+    height: 75vh;
   }
 
   .slider-container .slide .item {
@@ -1339,10 +1186,16 @@ svg path {
 
   .slide .item:nth-child(4) {
     left: calc(50% + 160px);
+    transform: translate(0, -50%);
   }
 
   .slide .item:nth-child(5) {
     left: calc(50% + 320px);
+    transform: translate(0, -50%);
+  }
+
+  .slide .item:nth-child(n + 6) {
+    left: calc(50% + 480px);
   }
 
   .item .content {
@@ -1511,7 +1364,7 @@ svg path {
   }
 
   .slider-container {
-    height: 70vh;
+    height: 65vh;
   }
 
   .slider-container .slide .item {
@@ -1523,6 +1376,7 @@ svg path {
   .slide .item:nth-child(2) {
     width: 100%;
     height: 100%;
+    transform: translate(0, 0);
   }
 
   .slide .item:nth-child(3) {
@@ -1532,14 +1386,17 @@ svg path {
 
   .slide .item:nth-child(4) {
     left: calc(50% + 130px);
+    transform: translate(0, -50%);
   }
 
   .slide .item:nth-child(5) {
     left: calc(50% + 260px);
+    transform: translate(0, -50%);
   }
 
   .slide .item:nth-child(n + 6) {
     left: calc(50% + 390px);
+    transform: translate(0, -50%);
   }
 
   .item .content {
@@ -1611,7 +1468,7 @@ svg path {
   }
 
   .slider-container {
-    height: 65vh;
+    height: 60vh;
   }
 
   .slider-container .slide .item {
@@ -1623,22 +1480,27 @@ svg path {
   .slide .item:nth-child(2) {
     width: 100%;
     height: 100%;
+    transform: translate(0, 0);
   }
 
   .slide .item:nth-child(3) {
     left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .slide .item:nth-child(4) {
     left: calc(50% + 115px);
+    transform: translate(0, -50%);
   }
 
   .slide .item:nth-child(5) {
     left: calc(50% + 230px);
+    transform: translate(0, -50%);
   }
 
   .slide .item:nth-child(n + 6) {
     left: calc(50% + 345px);
+    transform: translate(0, -50%);
   }
 
   .item .content {
