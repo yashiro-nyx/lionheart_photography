@@ -1006,14 +1006,26 @@ svg path {
     font-size: 4rem;
   }
 
-  .back-link {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.85rem;
-  }
-
   .slider-container .slide .item {
     width: 180px;
     height: 270px;
+  }
+
+  .slide .item:nth-child(4) {
+    left: calc(50% + 200px);
+  }
+
+  .slide .item:nth-child(5) {
+    left: calc(50% + 400px);
+  }
+
+  .content .name {
+    font-size: 50px;
+  }
+
+  .item .content {
+    left: 80px;
+    width: 250px;
   }
 }
 
@@ -1081,6 +1093,10 @@ svg path {
     text-align: left !important;
   }
 
+  .intro-col:nth-child(2) p {
+    text-align: left;
+  }
+
   .copy {
     width: 85%;
   }
@@ -1111,50 +1127,41 @@ svg path {
   .flex-container {
     flex-direction: column;
     gap: 2rem;
-    align-items: center;
   }
 
   .text-section,
-  .image-section {
-    width: 100% !important;
-    padding: 0 !important;
-  }
-
+  .image-section,
   .text-section.detail-view,
   .image-section.detail-view {
-    width: 100% !important;
-    padding: 0 !important;
+    width: 100%;
+    padding: 0;
+  }
+
+  .text-section.detail-view {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .text-section.scrollable .text-content {
     max-height: 50vh;
-    overflow-y: auto;
   }
 
   .product-name {
-    font-size: clamp(2.5rem, 10vw, 3.5rem);
-    word-wrap: break-word;
+    font-size: clamp(2.5rem, 10vw, 3rem);
   }
 
   .description {
     font-size: 1rem;
   }
 
-  .back-link {
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
-    margin-top: 1.5rem;
-    white-space: nowrap;
-  }
-
-  .back-link svg {
-    width: 14px;
-    height: 14px;
-  }
-
   .image-section {
     height: 40vh;
-    margin-bottom: 1rem;
+  }
+
+  .navigation,
+  .button {
+    padding: 0 1.5rem;
+    bottom: 1.5rem;
   }
 
   .slider-container {
@@ -1164,6 +1171,31 @@ svg path {
   .slider-container .slide .item {
     width: 140px;
     height: 210px;
+  }
+
+  .slide .item:nth-child(1),
+  .slide .item:nth-child(2) {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide .item:nth-child(3) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slide .item:nth-child(4) {
+    left: calc(50% + 160px);
+    transform: translate(0, -50%);
+  }
+
+  .slide .item:nth-child(5) {
+    left: calc(50% + 320px);
+    transform: translate(0, -50%);
+  }
+
+  .slide .item:nth-child(n + 6) {
+    left: calc(50% + 480px);
   }
 
   .item .content {
@@ -1209,6 +1241,10 @@ svg path {
     padding: 0.25rem 0;
   }
 
+  svg {
+    width: 95%;
+  }
+
   .heroSection h1 {
     font-size: 22vw;
     padding-bottom: 30vh;
@@ -1223,6 +1259,7 @@ svg path {
   .aboutSection {
     padding: 10vw 5vw;
     gap: 2rem;
+    justify-content: center;
   }
 
   .aboutSection h1 {
@@ -1281,7 +1318,7 @@ svg path {
   }
 
   .product-name {
-    font-size: clamp(2rem, 12vw, 2.8rem);
+    font-size: clamp(2rem, 12vw, 2.5rem);
     line-height: 1.1;
   }
 
@@ -1296,18 +1333,6 @@ svg path {
 
   .spec-list li {
     font-size: 0.85rem;
-  }
-
-  .back-link {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.75rem;
-    margin-top: 1rem;
-    border-radius: 1.5rem;
-  }
-
-  .back-link svg {
-    width: 12px;
-    height: 12px;
   }
 
   .image-section {
@@ -1326,6 +1351,18 @@ svg path {
     height: 16px;
   }
 
+  .navigation,
+  .button {
+    padding: 0 1rem;
+    bottom: 1rem;
+  }
+
+  .button {
+    right: 0;
+    left: 0;
+    justify-content: center;
+  }
+
   .slider-container {
     height: 65vh;
   }
@@ -1333,6 +1370,33 @@ svg path {
   .slider-container .slide .item {
     width: 110px;
     height: 165px;
+  }
+
+  .slide .item:nth-child(1),
+  .slide .item:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 0);
+  }
+
+  .slide .item:nth-child(3) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slide .item:nth-child(4) {
+    left: calc(50% + 130px);
+    transform: translate(0, -50%);
+  }
+
+  .slide .item:nth-child(5) {
+    left: calc(50% + 260px);
+    transform: translate(0, -50%);
+  }
+
+  .slide .item:nth-child(n + 6) {
+    left: calc(50% + 390px);
+    transform: translate(0, -50%);
   }
 
   .item .content {
@@ -1399,18 +1463,6 @@ svg path {
     font-size: clamp(1.75rem, 14vw, 2rem);
   }
 
-  /* Smallest back button size */
-  .back-link {
-    padding: 0.35rem 0.7rem;
-    font-size: 0.7rem;
-    border-radius: 1.25rem;
-  }
-
-  .back-link svg {
-    width: 10px;
-    height: 10px;
-  }
-
   .text-section.scrollable .text-content {
     max-height: 40vh;
   }
@@ -1422,6 +1474,33 @@ svg path {
   .slider-container .slide .item {
     width: 95px;
     height: 145px;
+  }
+
+  .slide .item:nth-child(1),
+  .slide .item:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 0);
+  }
+
+  .slide .item:nth-child(3) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slide .item:nth-child(4) {
+    left: calc(50% + 115px);
+    transform: translate(0, -50%);
+  }
+
+  .slide .item:nth-child(5) {
+    left: calc(50% + 230px);
+    transform: translate(0, -50%);
+  }
+
+  .slide .item:nth-child(n + 6) {
+    left: calc(50% + 345px);
+    transform: translate(0, -50%);
   }
 
   .item .content {
@@ -1459,10 +1538,5 @@ svg path {
 
   .image-section {
     height: 60vh;
-  }
-
-  .back-link {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.75rem;
   }
 }
